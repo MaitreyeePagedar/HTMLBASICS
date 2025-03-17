@@ -1,0 +1,25 @@
+/* External CSS */
+.external-link {
+    color: red;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+/* Hover effect for all links */
+a:hover {
+    color: darkorange;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+/* General styling for the page */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 50px;
+    background-color: aqua;
+}
+
+h2 {
+    color: darkblue;
+}

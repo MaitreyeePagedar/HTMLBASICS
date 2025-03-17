@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 2 - Table</title>
+    <style>
+        /* Universal Selector */
+        * {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Table Styling */
+        table {
+            width: 60%;
+            border-collapse: collapse;
+            background-color: #f4d7a3;
+            border: 2px solid brown;
+        }
+
+        /* Table Header */
+        th {
+            background-color: #008080;
+            color: white;
+            text-align: center;
+        }
+
+        /* Specific Column Colors */
+        .item {
+            color: teal;
+        }
+
+        .quantity, .unit-price, .price {
+            font-weight: bold;
+        }
+
+        /* Table Cells */
+        td, th {
+            border: 2px solid brown;
+            padding: 8px;
+            text-align: center;
+        }
+
+        /* Footer */
+        tfoot td {
+            text-align: center;
+            font-style: italic;
+            background-color: #f4d7a3;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <caption>Assignment 2 - Table</caption>
+        <thead>
+            <tr>
+                <th class="item">Item</th>
+                <th class="quantity">Quantity</th>
+                <th class="unit-price">Unit Price</th>
+                <th class="price">Price</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Pencils</td>
+                <td>2</td>
+                <td>$1</td>
+                <td>$2</td>
+            </tr>
+            <tr>
+                <td>Erasers</td>
+                <td>4</td>
+                <td>$0.50</td>
+                <td>$2</td>
+            </tr>
+            <tr>
+                <td>Subtotal</td>
+                <td colspan="2"></td>
+                <td>$4</td>
+            </tr>
+            <tr>
+                <td>Tax</td>
+                <td>10%</td>
+                <td>$0.4</td>
+                <td></td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="4">Footer of the table</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>

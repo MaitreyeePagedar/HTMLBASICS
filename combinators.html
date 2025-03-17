@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Combinators</title>
+    <style>
+        <!--adjacent sibling-->
+        div+p{
+            color: aqua;
+        }
+       
+        h2~i{
+            color: blue;
+        }
+        div>p{
+            color: red;
+        }
+        div b{
+            color: brown;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <div>General Siblings</div>
+    <p>Hello world</p>
+    <div>
+        <div>child div</div>
+        <p>This is child of div tag</p>
+        <h2>hii</h2>
+        <i>afternoon</i>
+        <b>good Morning</b>
+    </div>
+    <p>Good</p>
+    <p>Morning</p>
+</body>
+</html>
