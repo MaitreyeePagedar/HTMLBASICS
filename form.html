@@ -10,104 +10,188 @@
     <form action="submit_form.html" method="post">
         <fieldset>
             <legend>Personal Information</legend>
-            
+            <div>
             <label for="text">Text Input:</label>
             <input type="text" id="text" name="text" required><br><br><!--input tag is used to specify input field where user can enter data -->
-            
+            </div>
+            <div>
             <label for="password">Password:</label>
             <input type="password" id="password" name="password" required><br><br>
-        
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required><br><br>
+            </div>
+
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br><br>
+
+            </div>
             
-            <label for="number">Number:</label>
-            <input type="number" id="number" name="number"><br><br>
+            <div>
+                <label for="number">Number:</label>
+                <input type="number" id="number" name="number"><br><br>
+
+            </div>
             
-            <label for="date">Date:</label>
-            <input type="date" id="date" name="date"><br><br>
+            <div>
+                <label for="date">Date:</label>
+                <input type="date" id="date" name="date"><br><br>
+
+            </div>
+           
         </fieldset>
         
         <fieldset>
             <legend>Other Information</legend><!--it defines caption for fieldset element -->
+            <div>
+                <label for="file">File Upload:</label><!--it defines label -->
+                <input type="file" id="file" name="file"><br><br>
             
-            <label for="file">File Upload:</label><!--it defines label -->
-            <input type="file" id="file" name="file"><br><br>
-            
-            <label for="radio">Radio Button:</label>
-            <input type="radio" id="radio1" name="radio" value="option1"> Option 1
-            <input type="radio" id="radio2" name="radio" value="option2"> Option 2<br><br>
-            
+
+            </div>
+
+            <div>
+                <label for="radio">Radio Button:</label>
+                <input type="radio" id="radio1" name="radio" value="option1"> Option 1
+                <input type="radio" id="radio2" name="radio" value="option2"> Option 2<br><br>
+
+            </div>
+           
+           <div>
             <label for="checkbox">Checkbox:</label>
             <input type="checkbox" id="checkbox1" name="checkbox1" value="check1"> Check 1
             <input type="checkbox" id="checkbox2" name="checkbox2" value="check2"> Check 2<br><br>
+
+           </div> 
+         
+            <div>
+                <label for="select">Dropdown:</label>
+                <select id="select" name="select"><!--used to create dropdown list -->
+                    <option value="option1">Option 1</option><!--multiple options -->
+                    <option value="option2">Option 2</option>
+                    <option value="option3">Option 3</option>
+                </select><br><br>
+                
+            </div>
+          
+            <div>
+                <label for="textarea">Textarea:</label><br>
+                <textarea id="textarea" name="textarea" rows="4" cols="30"></textarea><br><br><!--textarea defines multiline text input -->
+
+            </div>
+           
+            <div>
+                <label for="range">Range:</label>
+                <input type="range" id="range" name="range" min="0" max="100"><br><br>
+            </div>
             
-            <label for="select">Dropdown:</label>
-            <select id="select" name="select"><!--used to create dropdown list -->
-                <option value="option1">Option 1</option><!--multiple options -->
-                <option value="option2">Option 2</option>
-                <option value="option3">Option 3</option>
-            </select><br><br>
+            <div>
+                <label for="color">Color Picker:</label>
+                <input type="color" id="color" name="color"><br><br>
+            </div>
             
-            <label for="textarea">Textarea:</label><br>
-            <textarea id="textarea" name="textarea" rows="4" cols="30"></textarea><br><br><!--textarea defines multiline text input -->
-            
-            <label for="range">Range:</label>
-            <input type="range" id="range" name="range" min="0" max="100"><br><br>
-            
-            <label for="color">Color Picker:</label>
-            <input type="color" id="color" name="color"><br><br>
-            
-            <label for="hidden">Hidden Input:</label>
-            <input type="hidden" id="hidden" name="hidden" value="hiddenValue"><br><br>
+            <div>
+                <label for="hidden">Hidden Input:</label>
+                <input type="hidden" id="hidden" name="hidden" value="hiddenValue"><br><br>
+            </div>
+           
         </fieldset>
+      
         
-        <input type="submit" value="Submit">
-        <input type="reset" value="Reset">
         <br><br>
-        <label for="month">Month</label>
-        <input type="month" id="month" name="month" min="2020-02" max="2025-03" value="2020-02"/>
+        <div>
+            <label for="month">Month</label>
+            <input type="month" id="month" name="month" min="2020-02" max="2025-03" value="2020-02"/>
+        </div>
+        
         <br><br>
-        <label for="mobile">MobileNumber</label>
-        <input type="mobile" id="mobile" name="mobile" required/>
+        <div>
+            <label for="mobile">MobileNumber</label>
+            <input type="mobile" id="mobile" name="mobile" required/>
+
+        </div>
+       
         <br><br>
-        <label for="week">Week</label>
-        <input type="week" id="week" name="week"/>
+        <div>
+            <label for="week">Week</label>
+            <input type="week" id="week" name="week"/>
+        </div>
+       
         <br><br>
-        <label for="time">Time</label>
-        <input type="time" id="time" name="time"/>
+        <div>
+            <label for="time">Time</label>
+            <input type="time" id="time" name="time"/>
+        </div>
+        
         <br><br>
-        <label for="url">URL</label>
-        <input type="url" id="url" name="url " size="30"/>
+        <div>
+            <label for="url">URL</label>
+            <input type="url" id="url" name="url " size="30"/>
+        </div>
+       
         <br><br>
-        <label for="search">Search</label>
-        <input type="search" name="search" id="search"/>  
+        <div>
+            <label for="search">Search</label>
+            <input type="search" name="search" id="search"/>  
+        </div>
+        
         <br><br>
-        <label for="datetime-local">datetime</label>
-        <input type="datetime-local" id="datetime-local" name="datetime-local" min="2025-03-17T00:00" max="2026-03-17T00:00"/> 
+        <div>
+            <label for="datetime-local">datetime</label>
+            <input type="datetime-local" id="datetime-local" name="datetime-local" min="2025-03-17T00:00" max="2026-03-17T00:00"/> 
+        </div>
+       
         <br><br>
-        <label for="browser">choose the browser</label>
-        <input type="browser" name="browser" id="browser"/>
-        <datalist id="browser">
-            <option value="chrome">
-            <option value="edge">
-            <option value="firefox">
-        </datalist>
+        <div>
+            <label for="browser">choose the browser</label>
+            <input type="browser" name="browser" id="browser"/>
+
+        </div>
+        <div>
+            <datalist id="browser">
+                <option value="chrome">
+                <option value="edge">
+                <option value="firefox">
+            </datalist>
+
+        </div>
+       
         <br><br>
-        <label for="file">Upload files:</label>
-        <input type="file" id="file" name="file" multiple>
+        <div>
+            <label for="file">Upload files:</label>
+            <input type="file" id="file" name="file" multiple>
+        </div>
+      
         <br><br>
-        <label for="readonly">readonly</label>
-        <input type="text" id="readonly" value="cannot edit" readonly>
+        <div>
+            <label for="readonly">readonly</label>
+            <input type="text" id="readonly" value="cannot edit" readonly>
+
+        </div>
+       
         <br><br>
-        <label for="zipcode">Zip Code:</label>
-        <input type="text" id="zipcode" name="zipcode" pattern="[0-9]{5}" required>
+        <div>
+            <label for="zipcode">Zip Code:</label>
+            <input type="text" id="zipcode" name="zipcode" pattern="[0-9]{5}" required>
+        </div>
+      
         <br><br>
-        <label for="quantity">Choose Quantity:</label>
-        <input type="number" id="quantity" name="quantity" step="5">
+        <div>
+            <label for="quantity">Choose Quantity:</label>
+            <input type="number" id="quantity" name="quantity" step="5">
+        </div>
+        
         <br><br>
-        <label for="fullname">Full Name:</label>
-        <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" title="Enter your legal name">
+        <div>
+            <label for="fullname">Full Name:</label>
+            <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" title="Enter your legal name">
+        </div>
+      
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+       
+       
 
     </form>
+    <!--strong tag is used for phraring and b tag is used for bold text formating  Assignment 4 - combinators... 
+Assignment 5 - create form with all the form tags.. use fieldsets, image tag, and all the phrase and formatting tags..-->
 </body>
 </html>
